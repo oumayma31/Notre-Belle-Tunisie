@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>La belle Tunisie - Contactez nous</title>
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/nb.css" />
+        
+    </head>
+    <body>
+        <header id="mainHeader">
+            <img src="images/drap.png" alt="Logo" id="logoImg" />
+            <h1>Notre belle tunisie</h1>
+            <nav id="mainNav">
+                <h1 class="accessibility">Menu principal</h1>
+                <p class="accessibility"><a href="#pageContent" title="Accéder directement au contenu principal de cette page">Passer le menu</a></p>
+                <ul>
+                    <li><a href="index.html" title="Vers la page d'accueil du site 'Notre Belle Tunisie'">Accueil</a></li>
+                    <li><a href="galeries.html" title="Vers les galeries photo de ce site">Galeries</a></li>
+                    <li><a href="contact.html" title="Vers la page de contact de ce site">Contact</a></li>
+                    <li><a href="Food.html" title="En savoir plus sur les repas Tunisiens">Cuisine Tunisienne</a></li>                
+
+                </ul>
+            </nav>
+            <button id="menuToggle"><img src="images/layout/hamburger.svg" alt="Ouvrir / Fermer le menu" /></button>
+        </header>
+        <section id="pageContent" class="text contact">
+            <main>
+                <h1>Contactez-nous</h1>
+                <p>Merci de compléter le formulaire suivant pour nous contacter. Tous les champs de ce formulaire sont requis.</p>
+                <form id="frmContact" action="merci.html">
+                    <div>
+                        <div>
+                            <label for="fName">Prénom</label>
+                            <input name="fName" id="fName" required autofocus />
+                        </div>
+                        <div>
+                            <label for="lName">Nom de famille</label>
+                            <input type="text" name="lName" id="lName" required />
+                        </div>
+                        <div>
+                            <label for="email">Votre e-mail</label>
+                            <input type="email" name="email" id="email" required />
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="message">Votre message</label>
+                            <textarea name="message" id="message" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </main>
+        </section>
+        <footer id="mainFooter">
+        </footer>
+    </body>
+</html>
